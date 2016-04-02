@@ -1,0 +1,436 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.junelabs.june.utashuttles.maxSchedule">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AFButton"
+        android:text="Arlington to Ft Worth"
+        android:onClick="onScheduleClick"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AtoFSchedule"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX Bus to CentrePort Station\n"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave College \nPark Stop\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Stop at Collins\nand Andrews\n(East Side of\n Street)\n\n5:41AM\n\n6:55AM\n7:25AM\n7:56AM\n8:28AM\n\n9:49AM\n10:49AM\n12:17PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive at\nCentrePort\nStation\n\n\n6:01AM\n\n7:15AM\n7:45AM\n8:16AM\n8:48AM\n\n10:09AM\n11:09\n12:37PM\n2:00PM\n3:30PM\n4:02PM\n\n5:00PM\n%;29PM\n\n6:07PM\n6:42PM\n7:25PM\n8:40PM\n10:00PM"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="TRE Train to\n Intermodal Center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave\nCentrePort\nStation\n\n\n6:18AM\n6:49AM\n7:19AM\n7:49AM\n8:19AM\n*:59AM\n9:50AM\n\n11:20AM\n12:50PM\n2:20PM\n3:50PM\n4:20PM\n4:49PM\n5:11PM\n5:34PM\n5:50PM\n6:21PM\n6:50PM\n7:33PM\n8:50PM\n10:20PM"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive ITC Station\n\n\n\n\n6:44AM\n7:14AM\n7L43AM\n8:14AM\n8:44AM\n9:22AM\n10:14\n\n11:44AM\n1:14PM\n2:44PM\n4:14PM\n4:44PM\n5:14Pm\n5:36PM\n5:58PM\n6:15PM\n6:44PM\n7:14PM\n7:57PM\n9:14PM\n10:44PM"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FAButton"
+        android:text="Ft Worth to Arlington"
+        android:onClick="onScheduleClick"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FtoASchedule"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX Bus to CentrePort Station\n"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave College \nPark Stop\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Stop at Collins\nand Andrews\n(East Side of\n Street)\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive at\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="TRE Train to\n Intermodal Center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive ITC Station\n\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ADButton"
+        android:text="Arlington to Dallas"
+        android:onClick="onScheduleClick"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AtoDSchedule"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX Bus to CentrePort Station\n"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave College \nPark Stop\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Stop at Collins\nand Andrews\n(East Side of\n Street)\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive at\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="TRE Train to\n Intermodal Center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive ITC Station\n\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DAButton"
+        android:text="Dallas to Arlington"
+        android:onClick="onScheduleClick"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DtoASchedule"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX Bus to CentrePort Station\n"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave College \nPark Stop\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Stop at Collins\nand Andrews\n(East Side of\n Street)\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive at\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="TRE Train to\n Intermodal Center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Leave\nCentrePort\nStation\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="Arrive ITC Station\n\n\n\n\n5:33AM\n\n6:47AM\n7:17AM\n7:48AM\n8:20AM\n\n9:41AM\n10:41AM\n12:09PM\n1:41PM\n3:11PM\n3:43PM\n\n4:41PM\n5:10PM\n\n5:48PM\n6:23PM\n7:06PM\n8:21PM\n9:41PM"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+</LinearLayout>

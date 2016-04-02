@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/mainButton"
+        android:text="@string/whereButton"
+        android:onClick="onButtonClick"
+        android:background="#FE9A2E"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/blueButton"
+        android:text="@string/BlueButton"
+        android:onClick="onButtonClick"
+        android:background="#2E64FE"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/greenButton"
+        android:text="@string/GreenButton"
+        android:onClick="onButtonClick"
+        android:background="#31B404"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/redButton"
+        android:text="@string/RedBUtton"
+        android:onClick="onButtonClick"
+        android:background="#FF0000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/maxButton"
+        android:text="@string/MaxButton"
+        android:onClick="onButtonClick"
+        android:background="#D0A9F5"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/infoButton"
+        android:text="@string/InfoButton"
+        android:onClick="onButtonClick"
+        android:background="#81F7F3"/>
+
+
+
+</LinearLayout>

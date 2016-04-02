@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.junelabs.june.utashuttles" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".useful_info"
+            android:label="@string/title_activity_useful_info"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.junelabs.june.utashuttles.MainActivity" />
+        </activity>
+        <activity
+            android:name=".maxSchedule"
+            android:label="@string/title_activity_max_schedule"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.junelabs.june.utashuttles.MainActivity" />
+        </activity>
+        <activity
+            android:name=".greenRoute"
+            android:label="@string/title_activity_green_route"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.junelabs.june.utashuttles.MainActivity" />
+        </activity>
+        <activity
+            android:name=".blueRoute"
+            android:label="@string/title_activity_blue_route"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.junelabs.june.utashuttles.MainActivity" />
+        </activity>
+        <activity
+            android:name=".redRoute"
+            android:label="@string/title_activity_red_route"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.junelabs.june.utashuttles.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UTA Shuttles</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="whereButton">Where do you want to go?</string>
+    <string name="BlueButton">Blue Shuttle Route</string>
+    <string name="GreenButton">Green Shuttle Route</string>
+    <string name="RedBUtton">Red Shuttle Route</string>
+    <string name="MaxButton">Metro Arlington Express (MAX)</string>
+    <string name="InfoButton">Useful Info</string>
+    <string name="title_activity_useful_info">Useful Information</string>
+    <string name="title_activity_max_schedule">Max Schedule</string>
+    <string name="title_activity_green_route">Green Shuttle Route</string>
+    <string name="leftAt">Arrived at: N/A</string>
+    <string name="arrivesAt">Expected in: N/A</string>
+    <string name="title_activity_blue_route">Blue Route</string>
+    <string name="stops">Stops</string>
+    <string name="title_activity_red_route">Red Route</string>
+</resources>
